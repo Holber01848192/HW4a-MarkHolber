@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!-- 
+Name: Mark Holber/UML CS/mark_holber@student.uml.edu
+Date: 10-25-2022
+File:index.html
+Description: Validation and modifications using jquery 
+-->
+
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+
+    <title>First Website</title>
+
+    <link rel="stylesheet" href="CSS/style.css" > 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/additional-methods.min.js"></script>
+    
+    
+
+        <script src="Javascript/script.js"></script>
+  </head>
+
+<body> 
+    <div id="wrapper">
+        <header> 
+            <h1> Table</h1>
+        </header>   
+        
+        <h2> Please input number of rows and columns from -50 to 50.</h2>
+        <br>
+       <!--min="-50" max="50" required-->
+
+        <form name="inputs" id="form1" action="/action_page.php">
+
+        <p id = "p1">Enter column minimum: </p> 
+        <input type="number" name="xAxisMin" id="xMin">
+        <br>
+        <p>Enter column maximum: </p> 
+        <input type="number" name="xAxisMax" id="xMax">
+        <br>
+        <p id = "p3">Enter row minimum: </p> 
+        <input type="number" name="yAxisMin" id="yMin">
+        <br>
+        <p>Enter row maximum: </p> 
+        <input type="number" name="yAxisMax" id="yMax">
+        <br>
+        <br>
+
+        <input name="Make Table" type = "button" value="Make Table" onclick = "validate()">
+      
+        </form>
+
+        <p id = "output5"></p>
+
+
+    
+        <div id ="t1">
+         <p> Please insert desired values in chart and press 'Make Table'</p>       
+        </div>
+
+        
+    </div>
+
+     
+
+
+</body>
